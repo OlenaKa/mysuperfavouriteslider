@@ -181,18 +181,25 @@ $slick-opacity-not-active: 0.25 !default;
         width: 20px;
         height: 20px;
         font-family: $slick-font-family;
-        font-size: $slick-dot-size;
+        font-size: 40px;
         line-height: 20px;
         text-align: center;
-        color: $slick-dot-color;
+        color: #d9d9d9;
         opacity: $slick-opacity-not-active;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
     }
     &.slick-active button:before {
-      color: $slick-dot-color-active;
-      opacity: $slick-opacity-default;
+      background-image: url(../img/dotcurrent.svg);
+      content: "";
+      width: 12px;
+      background-repeat: no-repeat;
+      opacity: 1;
+      background-position: center;
+
+      // color: $slick-dot-color-active;
+      // opacity: $slick-opacity-default;
     }
   }
 }
